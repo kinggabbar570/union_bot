@@ -18,8 +18,8 @@ const networks = {
     name: 'Babylon Testnet',
     rpc: 'https://babylon-testnet-rpc.nodes.guru',
     address: '0x210618DD6434D2AB1e2703A43da8E141C5De5201'
-  }
-'4': {
+  },
+  '4': {
     name: 'Arbitrum Sepolia',
     rpc: 'https://sepolia-rollup.arbitrum.io/rpc',
     address: '0xBd346331b31f8C43CC378286Bfe49f2f7F128c39'

@@ -7,11 +7,13 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-// Network configurations
+// Network configurations 
 const networks = {
   '1': {
     name: 'Ethereum Sepolia',
     rpc: 'https://ethereum-sepolia-rpc.publicnode.com',
+    // check what is this address used for try to add a different address of you another wallet and see if it works else look for a different code 
+    // profile on github that is using the sepolia eth for transaction and learn from it.
     address: '0xd38E5c25935291fFD51C9d66C3B7384494bb099A'
   },
   '2': {
@@ -27,7 +29,8 @@ const networks = {
 };
 
 // Prompt user for network selection
-rl.question('Select the network(s) to send transactions to (1: Arbitrum Sepolia, 2: Berachain bArtion Testnet, 3: All): ', (networkSelection) => {
+// make changes here add the Eth sepolia and
+rl.question('Select the network(s) to send transactions to (1: Ethereum Sepolia, 2: Babylon Testnet, 3: All, 4: Arbitrum Sepolia): ', (networkSelection) => {
   const selectedNetworks = networkSelection.split(',').map(choice => choice.trim());
   const prompts = [];
 
